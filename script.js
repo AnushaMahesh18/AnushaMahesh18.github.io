@@ -1,6 +1,6 @@
 document.getElementById("year").textContent = new Date().getFullYear();
 
-// typing effect (no library)
+/* typing effect (no library) */
 function typeRotate(el, words, period = 1400) {
   let txt = "";
   let wordIndex = 0;
@@ -9,14 +9,15 @@ function typeRotate(el, words, period = 1400) {
   function tick() {
     const full = words[wordIndex % words.length];
 
-    if (isDeleting) txt = full.substring(0, txt.length - 1);
-    else txt = full.substring(0, txt.length + 1);
+    txt = isDeleting
+      ? full.substring(0, txt.length - 1)
+      : full.substring(0, txt.length + 1);
 
     el.textContent = txt;
 
     let delta = isDeleting ? 40 : 65;
     if (!isDeleting && txt === full) { delta = period; isDeleting = true; }
-    else if (isDeleting && txt === "") { isDeleting = false; wordIndex++; delta = 300; }
+    else if (isDeleting && txt === "") { isDeleting = false; wordIndex++; delta = 250; }
 
     setTimeout(tick, delta);
   }
@@ -30,7 +31,7 @@ if (typed) {
   if (words.length) typeRotate(typed, words);
 }
 
-// portfolio filters
+/* portfolio filters */
 const filterBtns = document.querySelectorAll(".filter");
 const works = document.querySelectorAll(".work");
 
@@ -48,13 +49,13 @@ filterBtns.forEach(btn => {
   });
 });
 
-// active nav on scroll
+/* active nav on scroll */
 const navLinks = document.querySelectorAll(".nav a");
 const sections = Array.from(document.querySelectorAll(".section"));
 
 function setActive() {
   let idx = 0;
-  const y = window.scrollY + 140;
+  const y = window.scrollY + 160;
   for (let i = 0; i < sections.length; i++) {
     if (sections[i].offsetTop <= y) idx = i;
   }
