@@ -105,13 +105,32 @@ body{
   font-weight:700;
   letter-spacing:.4px;
 } */
-.avatar-img{
+/* .avatar-img{
   width:64px;
   height:64px;
   border-radius:50%;
   object-fit:cover;
   border:2px solid rgba(255,255,255,.15);
+} */
+.profile-wrapper{
+  width:110px;
+  height:110px;
+  border-radius:50%;
+  padding:8px;
+  background:#1e293b;                /* dark ring like reference */
+  box-shadow: 0 0 0 6px rgba(255,255,255,.05);
+  display:flex;
+  align-items:center;
+  justify-content:center;
 }
+
+.profile-img{
+  width:100%;
+  height:100%;
+  border-radius:50%;
+  object-fit:cover;
+}
+
 
 .name{ font-weight:700; }
 .meta{ font-size:12px; opacity:.85; margin-top:2px; }
