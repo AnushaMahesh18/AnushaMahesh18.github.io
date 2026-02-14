@@ -4,11 +4,14 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Anusha Mahesh | Portfolio</title>
-  <meta name="description" content="Anusha Mahesh — AI/ML graduate student portfolio." />
+  <meta name="description" content="Anusha Mahesh — ML Engineer / AI Research / MLOps Portfolio" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tech Logos (Devicon) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"/>
 
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -17,38 +20,38 @@
   <!-- Sidebar -->
   <aside class="sidebar">
     <div class="brand">
-      <!-- IMPORTANT: image must be in your repo root with this exact name -->
       <div class="profile-wrapper">
+        <!-- Make sure image.png exists in repo root -->
         <img src="image.png" alt="Anusha Mahesh" class="profile-img">
       </div>
 
       <div class="brand-text">
         <div class="name">Anusha Mahesh</div>
-        <div class="meta">MS CS @ RIT • AI/ML</div>
+        <div class="meta">MS CS @ RIT • Graduating May 2027</div>
       </div>
     </div>
 
     <div class="social">
-      <!-- Replace links -->
-      <a class="social-btn" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">in</a>
-      <a class="social-btn" href="https://github.com/AnushaMahesh18" target="_blank" rel="noreferrer">GH</a>
-      <a class="social-btn" href="mailto:your_email@rit.edu">✉</a>
+      <!-- Replace with your real LinkedIn -->
+      <a class="social-btn" href="https://www.linkedin.com/" target="_blank" rel="noreferrer" aria-label="LinkedIn">in</a>
+      <a class="social-btn" href="https://github.com/AnushaMahesh18" target="_blank" rel="noreferrer" aria-label="GitHub">GH</a>
+      <a class="social-btn" href="mailto:am4556@g.rit.edu" aria-label="Email">✉</a>
     </div>
 
     <nav class="nav">
       <a href="#home" class="active">Home</a>
       <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#portfolio">Portfolio</a>
+      <a href="#services">Focus Areas</a>
+      <a href="#portfolio">Projects</a>
       <a href="#resume">Resume</a>
       <a href="#skills">Skills</a>
-      <a href="#certifications">Certifications</a>
+      <a href="#research">Research</a>
       <a href="#contact">Contact</a>
     </nav>
 
     <div class="copyright">
       © <span id="year"></span> Anusha Mahesh
-      <div class="muted small">Designed & built by Anusha</div>
+      <div class="muted small">Built on GitHub Pages</div>
     </div>
   </aside>
 
@@ -61,23 +64,65 @@
         <h1>Anusha Mahesh</h1>
 
         <p class="type-line">
-          I’m a <span class="typed" data-typed='["AI/ML Graduate Student","Aspiring Machine Learning Engineer","NLP + Analytics Builder","Cloud + Data Systems Learner"]'></span>
+          I’m a <span class="typed" data-typed='["Machine Learning Engineer (Aspiring)","AI Research Intern Candidate","Federated Learning Builder","Computer Vision Learner","ML + Cloud Systems Learner"]'></span>
         </p>
 
+        <!-- One-line intro as you asked -->
         <p class="lead">
-          MS Computer Science graduate student at RIT, graduating May 2027, passionate about building practical AI/ML solutions.
+          MS Computer Science graduate student at Rochester Institute of Technology (May 2027) specializing in machine learning, federated learning, and computer vision.
         </p>
 
         <div class="hero-cta">
           <a class="btn primary" href="#portfolio">View Projects</a>
           <a class="btn" href="#contact">Contact</a>
+          <!-- Put your PDF in repo root as resume.pdf -->
           <a class="btn" href="resume.pdf" target="_blank" rel="noreferrer">Download Resume</a>
         </div>
 
         <div class="hero-note">
-          <span class="pill">Open to internships / co-ops</span>
+          <span class="pill">Seeking Summer 2026 Internships</span>
           <span class="pill">Rochester, NY</span>
-          <span class="pill">AI • ML • NLP • AWS</span>
+          <span class="pill">AI • ML • CV • Data</span>
+        </div>
+
+        <!-- ICON STRIP (makes it look less plain) -->
+        <div class="icon-strip" aria-label="Core domains">
+          <div class="icon-card">
+            <div class="icon">🧠</div>
+            <div class="icon-title">Machine Learning</div>
+            <div class="icon-sub">Modeling & evaluation</div>
+          </div>
+          <div class="icon-card">
+            <div class="icon">🌐</div>
+            <div class="icon-title">Federated Learning</div>
+            <div class="icon-sub">Non-IID settings</div>
+          </div>
+          <div class="icon-card">
+            <div class="icon">👁️</div>
+            <div class="icon-title">Computer Vision</div>
+            <div class="icon-sub">Geometry & pipelines</div>
+          </div>
+          <div class="icon-card">
+            <div class="icon">☁️</div>
+            <div class="icon-title">Cloud Learning</div>
+            <div class="icon-sub">AWS fundamentals</div>
+          </div>
+          <div class="icon-card">
+            <div class="icon">📈</div>
+            <div class="icon-title">Analytics</div>
+            <div class="icon-sub">Real datasets</div>
+          </div>
+        </div>
+
+        <!-- TECH LOGO CHIPS -->
+        <div class="tech-row" aria-label="Tech stack">
+          <span class="tech-chip"><i class="devicon-python-plain"></i> Python</span>
+          <span class="tech-chip"><i class="devicon-pytorch-original"></i> PyTorch</span>
+          <span class="tech-chip"><i class="devicon-scikitlearn-plain"></i> scikit-learn</span>
+          <span class="tech-chip"><i class="devicon-opencv-plain"></i> OpenCV</span>
+          <span class="tech-chip"><i class="devicon-amazonwebservices-plain-wordmark"></i> AWS</span>
+          <span class="tech-chip"><i class="devicon-mysql-plain"></i> SQL</span>
+          <span class="tech-chip"><i class="devicon-git-plain"></i> Git</span>
         </div>
       </div>
     </section>
@@ -86,7 +131,12 @@
     <section id="about" class="section">
       <div class="section-head">
         <h2>About</h2>
-        <p>I build practical machine learning solutions with clean engineering and clear results.</p>
+      </div>
+
+      <div class="card wide">
+        <p class="about-para">
+          Based in Rochester, NY, I am an MS Computer Science graduate student at RIT (May 2027) focused on building practical AI systems. I’ve developed and evaluated supervised learning models on healthcare datasets during my ML internship and built a personalized federated learning system to address non-IID data challenges. Alongside coursework in AI, machine learning, computer vision, and cloud software systems, I’m expanding my cloud skills (AWS) and strengthening my foundations through consistent DSA practice. I’m actively seeking Summer 2026 internships across ML engineering, AI research, MLOps, and data analytics roles.
+        </p>
       </div>
 
       <div class="grid2">
@@ -94,117 +144,163 @@
           <h3>Quick Info</h3>
           <ul class="info">
             <li><span>Degree:</span> MS in Computer Science</li>
-            <li><span>University:</span> RIT</li>
-            <li><span>Focus:</span> AI/ML, NLP, Analytics, Cloud</li>
+            <li><span>University:</span> Rochester Institute of Technology</li>
+            <li><span>Graduation:</span> May 2027</li>
             <li><span>Location:</span> Rochester, NY</li>
-            <li><span>Email:</span> <a href="mailto:your_email@rit.edu">your_email@rit.edu</a></li>
+            <li><span>Email:</span> <a href="mailto:am4556@g.rit.edu">am4556@g.rit.edu</a></li>
           </ul>
         </div>
 
         <div class="card">
-          <h3>Highlights</h3>
+          <h3>What I’m building toward</h3>
           <ul class="bullets">
-            <li>TrendPulse: entity intelligence & early crisis detection (NLP + analytics).</li>
-            <li>Federated Learning: personalization strategies for privacy-sensitive prediction tasks.</li>
-            <li>AWS + cloud tooling: Lambda, DynamoDB, S3, SNS, Terraform basics.</li>
+            <li>ML engineering: clean training/evaluation + strong results communication.</li>
+            <li>AI research: reading, experimentation, and structured write-ups.</li>
+            <li>MLOps & cloud: deploying ML workflows with AWS fundamentals.</li>
+            <li>DSA: consistent practice to build efficient, scalable solutions.</li>
           </ul>
         </div>
       </div>
     </section>
 
-    <!-- Services -->
+    <!-- Focus Areas -->
     <section id="services" class="section">
       <div class="section-head">
-        <h2>Services</h2>
-        <p>What I can contribute to a team or project.</p>
+        <h2>Focus Areas</h2>
+        <p>Where I spend most of my time (and what I can contribute in teams).</p>
       </div>
 
       <div class="grid3">
         <div class="card">
-          <h3>ML Prototypes</h3>
-          <p class="muted">Baselines, features, training, evaluation, and clean reporting.</p>
+          <div class="mini-head"><span class="mini-icon">🧪</span><span class="mini-title">Modeling</span></div>
+          <p class="muted">Supervised learning, feature engineering, evaluation, and clear reporting.</p>
         </div>
         <div class="card">
-          <h3>NLP & Monitoring</h3>
-          <p class="muted">Sentiment, entity tracking, summarization, alerts & dashboards.</p>
+          <div class="mini-head"><span class="mini-icon">🌐</span><span class="mini-title">Federated Learning</span></div>
+          <p class="muted">Personalization strategies for non-IID settings with reduced communication overhead.</p>
         </div>
         <div class="card">
-          <h3>Cloud Pipelines</h3>
-          <p class="muted">Serverless workflows and cost-aware architecture patterns.</p>
+          <div class="mini-head"><span class="mini-icon">👁️</span><span class="mini-title">Computer Vision</span></div>
+          <p class="muted">Transformations, geometry, and pipelines (OpenCV + CV foundations).</p>
         </div>
       </div>
     </section>
 
-    <!-- Portfolio -->
+    <!-- Projects -->
     <section id="portfolio" class="section">
       <div class="section-head">
-        <h2>Portfolio</h2>
-        <p>Selected work (filters included like the reference site).</p>
+        <h2>Projects</h2>
+        <p>High-signal projects aligned with your resume (with metrics where possible).</p>
       </div>
 
       <div class="filters">
         <button class="filter active" data-filter="all">All</button>
         <button class="filter" data-filter="ml">Machine Learning</button>
-        <button class="filter" data-filter="nlp">NLP</button>
-        <button class="filter" data-filter="cloud">Cloud</button>
+        <button class="filter" data-filter="fl">Federated</button>
         <button class="filter" data-filter="cv">Computer Vision</button>
+        <button class="filter" data-filter="security">Security</button>
+        <button class="filter" data-filter="research">Research</button>
       </div>
 
       <div class="portfolio-grid">
-        <article class="work" data-tags="ml nlp cloud">
-          <h3>TrendPulse</h3>
-          <p class="muted">Cross-platform entity intelligence and early crisis detection system.</p>
+        <!-- FedPer -->
+        <article class="work" data-tags="ml fl">
+          <div class="work-head">
+            <div class="work-icon">🌐</div>
+            <div>
+              <h3>Personalized Federated Learning (FedPer) for Non-IID Data</h3>
+              <div class="tagline">ResNet-34 • CIFAR-10 • 8 clients • non-IID (k=4/8/10)</div>
+            </div>
+          </div>
+          <p class="muted">
+            Implemented FedPer by splitting models into shared base layers and client-specific personalization layers. Achieved <strong>86.44% accuracy</strong> under extreme non-IID settings (k=4) and reduced communication overhead by <strong>15%</strong> by aggregating only base layers.
+          </p>
           <div class="chips">
-            <span>AWS</span><span>NLP</span><span>Analytics</span>
+            <span>PyTorch</span><span>Federated Learning</span><span>Evaluation</span>
           </div>
           <div class="work-links">
             <a href="#" target="_blank" rel="noreferrer">Code</a>
+            <a href="#" target="_blank" rel="noreferrer">Report</a>
+          </div>
+        </article>
+
+        <!-- ML Internship -->
+        <article class="work" data-tags="ml">
+          <div class="work-head">
+            <div class="work-icon">🏥</div>
+            <div>
+              <h3>ML Internship — Cancer Risk Prediction</h3>
+              <div class="tagline">Random Forest • SVM • EDA • 1,000+ patient records</div>
+            </div>
+          </div>
+          <p class="muted">
+            Built and evaluated supervised ML models to predict cancer risk using structured healthcare datasets. Performed preprocessing, feature engineering, and EDA; compared Random Forest and SVM using accuracy and confusion matrices.
+          </p>
+          <div class="chips">
+            <span>scikit-learn</span><span>Feature Engineering</span><span>Model Evaluation</span>
+          </div>
+          <div class="work-links">
+            <a href="#" target="_blank" rel="noreferrer">Details</a>
+          </div>
+        </article>
+
+        <!-- CV -->
+        <article class="work" data-tags="cv ml">
+          <div class="work-head">
+            <div class="work-icon">👁️</div>
+            <div>
+              <h3>Panorama Stitching (Computer Vision)</h3>
+              <div class="tagline">Homography • Warping • Blending</div>
+            </div>
+          </div>
+          <p class="muted">
+            Implemented homography-based alignment, geometric warping, and weighted blending for image stitching. Validated numerical correctness and handled coordinate transformations for robust panorama results.
+          </p>
+          <div class="chips">
+            <span>OpenCV</span><span>NumPy</span><span>Geometry</span>
+          </div>
+          <div class="work-links">
+            <a href="#" target="_blank" rel="noreferrer">Code</a>
+          </div>
+        </article>
+
+        <!-- Security -->
+        <article class="work" data-tags="security">
+          <div class="work-head">
+            <div class="work-icon">🔒</div>
+            <div>
+              <h3>Zero-Bit Biometric Watermarking for Document Security</h3>
+              <div class="tagline">Iris + fingerprint • integrity protection</div>
+            </div>
+          </div>
+          <p class="muted">
+            Designed a zero-bit biometric watermarking system to ensure document integrity using iris and fingerprint data. Implemented encryption-based watermark embedding and evaluated robustness against common document alterations.
+          </p>
+          <div class="chips">
+            <span>Security</span><span>Biometrics</span><span>Robustness Testing</span>
+          </div>
+          <div class="work-links">
             <a href="#" target="_blank" rel="noreferrer">Write-up</a>
           </div>
         </article>
 
-        <article class="work" data-tags="ml">
-          <h3>Federated Learning (Personalization)</h3>
-          <p class="muted">Privacy-aware experiments comparing aggregation vs personalization strategies.</p>
+        <!-- Research -->
+        <article class="work" data-tags="research">
+          <div class="work-head">
+            <div class="work-icon">📄</div>
+            <div>
+              <h3>LLM Reasoning Architectures Survey</h3>
+              <div class="tagline">CoT vs ToT vs GoT • research paper</div>
+            </div>
+          </div>
+          <p class="muted">
+            Conducted a comparative study of Chain-of-Thought, Tree-of-Thought, and Graph-of-Thought reasoning frameworks in large language models; analyzed strengths, limitations, and applicability for complex problem solving.
+          </p>
           <div class="chips">
-            <span>PyTorch</span><span>Federated</span><span>Research</span>
-          </div>
-          <div class="work-links">
-            <a href="#" target="_blank" rel="noreferrer">Report</a>
-            <a href="#" target="_blank" rel="noreferrer">Code</a>
-          </div>
-        </article>
-
-        <article class="work" data-tags="cv ml">
-          <h3>Panorama Stitching</h3>
-          <p class="muted">Homography estimation, warping, and weighted blending for image stitching.</p>
-          <div class="chips">
-            <span>NumPy</span><span>CV</span><span>Geometry</span>
-          </div>
-          <div class="work-links">
-            <a href="#" target="_blank" rel="noreferrer">Code</a>
-          </div>
-        </article>
-
-        <article class="work" data-tags="nlp ml">
-          <h3>LLM Reasoning Survey</h3>
-          <p class="muted">Comparative survey: Chain-of-Thought vs Tree-of-Thought vs Graph-of-Thought.</p>
-          <div class="chips">
-            <span>LLMs</span><span>NLP</span><span>Survey</span>
+            <span>LLMs</span><span>Literature Review</span><span>Technical Writing</span>
           </div>
           <div class="work-links">
             <a href="#" target="_blank" rel="noreferrer">PDF</a>
-          </div>
-        </article>
-
-        <article class="work" data-tags="cloud">
-          <h3>Serverless Notifications</h3>
-          <p class="muted">DynamoDB Streams → Lambda → SNS email notification pipeline.</p>
-          <div class="chips">
-            <span>Lambda</span><span>DynamoDB</span><span>SNS</span>
-          </div>
-          <div class="work-links">
-            <a href="#" target="_blank" rel="noreferrer">Notes</a>
           </div>
         </article>
       </div>
@@ -214,22 +310,24 @@
     <section id="resume" class="section">
       <div class="section-head">
         <h2>Resume</h2>
-        <p>Short, scannable, and recruiter-friendly.</p>
+        <p>Quick snapshot — full PDF available in the button above.</p>
       </div>
 
       <div class="grid2">
         <div class="card">
           <h3>Education</h3>
-          <p><strong>MS in Computer Science</strong> — Rochester Institute of Technology (RIT)</p>
-          <p class="muted">Focus: AI/ML, NLP, Analytics, Cloud Systems</p>
+          <p><strong>Rochester Institute of Technology</strong> — MS in Computer Science</p>
+          <p class="muted">GPA: 3.84/4.00 • Jan 2025 – May 2027</p>
+          <p class="muted">Coursework: AI, ML, Computer Vision, Algorithms & Complexity, Cloud Software Systems</p>
         </div>
 
         <div class="card">
           <h3>Experience</h3>
-          <p><strong>Student Employee</strong> — RIT Dining Services</p>
+          <p><strong>Machine Learning Intern</strong> — Prinston Smart Engineers (Aug 2023 – Oct 2023)</p>
           <ul class="bullets">
-            <li>Customer-facing operations and teamwork in a fast-paced environment.</li>
-            <li>Balanced shift responsibilities with graduate coursework.</li>
+            <li>Built supervised models for cancer risk prediction using structured healthcare data.</li>
+            <li>Performed preprocessing, feature engineering, EDA, and model evaluation.</li>
+            <li>Compared Random Forest and SVM; used confusion matrices for performance review.</li>
           </ul>
         </div>
       </div>
@@ -239,55 +337,67 @@
     <section id="skills" class="section">
       <div class="section-head">
         <h2>Skills</h2>
-        <p>A clean list, easy to scan.</p>
+        <p>ATS-friendly keywords + visual logo chips.</p>
       </div>
 
-      <div class="grid3">
+      <div class="skills-grid">
         <div class="card">
           <h3>ML / AI</h3>
           <ul class="bullets">
-            <li>Modeling, evaluation, error analysis</li>
-            <li>Federated learning basics</li>
-            <li>NLP: sentiment, summarization, entity tracking</li>
+            <li>Supervised Learning, Classification, Feature Engineering</li>
+            <li>Model Evaluation, Confusion Matrix, Error Analysis</li>
+            <li>Federated Learning (FedPer), Non-IID training</li>
+            <li>Computer Vision fundamentals</li>
           </ul>
         </div>
+
         <div class="card">
           <h3>Programming</h3>
           <ul class="bullets">
-            <li>Python, Java</li>
-            <li>NumPy, Pandas</li>
-            <li>Git/GitHub</li>
+            <li>Python, Java, C++, SQL</li>
+            <li>NumPy, Pandas, scikit-learn, PyTorch</li>
+            <li>Git/GitHub, Jupyter Notebook</li>
           </ul>
         </div>
+
         <div class="card">
-          <h3>Cloud</h3>
+          <h3>Cloud & Tools</h3>
           <ul class="bullets">
-            <li>AWS: S3, Lambda, DynamoDB, SNS, CloudWatch</li>
-            <li>Terraform basics</li>
+            <li>AWS fundamentals (S3, Lambda, DynamoDB, SNS, CloudWatch)</li>
+            <li>MySQL • VS Code • HTML/CSS</li>
+            <li>Learning MLOps workflows</li>
           </ul>
         </div>
+      </div>
+
+      <div class="logo-wall" aria-label="Technology logos">
+        <span class="logo-chip"><i class="devicon-python-plain"></i>Python</span>
+        <span class="logo-chip"><i class="devicon-pytorch-original"></i>PyTorch</span>
+        <span class="logo-chip"><i class="devicon-scikitlearn-plain"></i>scikit-learn</span>
+        <span class="logo-chip"><i class="devicon-opencv-plain"></i>OpenCV</span>
+        <span class="logo-chip"><i class="devicon-mysql-plain"></i>MySQL</span>
+        <span class="logo-chip"><i class="devicon-amazonwebservices-plain-wordmark"></i>AWS</span>
+        <span class="logo-chip"><i class="devicon-git-plain"></i>Git</span>
+        <span class="logo-chip"><i class="devicon-github-original"></i>GitHub</span>
       </div>
     </section>
 
-    <!-- Certifications -->
-    <section id="certifications" class="section">
+    <!-- Research -->
+    <section id="research" class="section">
       <div class="section-head">
-        <h2>Certifications</h2>
-        <p>Add your certificates here (optional).</p>
+        <h2>Research</h2>
       </div>
 
-      <div class="grid3">
-        <div class="card">
-          <h3>AWS Tutorial</h3>
-          <p class="muted">Add your completed AWS tutorial / badge here.</p>
+      <div class="card wide">
+        <h3>Comparative Study of Reasoning Architectures in Large Language Models</h3>
+        <p class="muted">
+          Course research paper analyzing Chain-of-Thought, Tree-of-Thought, and Graph-of-Thought reasoning paradigms in LLMs, including strengths, limitations, and applicability for complex problem solving.
+        </p>
+        <div class="chips">
+          <span>LLMs</span><span>CoT</span><span>ToT</span><span>GoT</span><span>Technical Writing</span>
         </div>
-        <div class="card">
-          <h3>ML / Data</h3>
-          <p class="muted">Any ML course completion certificates.</p>
-        </div>
-        <div class="card">
-          <h3>Other</h3>
-          <p class="muted">Any additional achievements.</p>
+        <div class="work-links">
+          <a href="#" target="_blank" rel="noreferrer">PDF</a>
         </div>
       </div>
     </section>
@@ -296,7 +406,7 @@
     <section id="contact" class="section">
       <div class="section-head">
         <h2>Contact</h2>
-        <p>Let’s connect.</p>
+        <p>Fast ways to reach me.</p>
       </div>
 
       <div class="grid2">
@@ -304,21 +414,21 @@
           <h3>Reach me</h3>
           <ul class="info">
             <li><span>Location:</span> Rochester, NY</li>
-            <li><span>Email:</span> <a href="mailto:your_email@rit.edu">your_email@rit.edu</a></li>
+            <li><span>Email:</span> <a href="mailto:am4556@g.rit.edu">am4556@g.rit.edu</a></li>
             <li><span>GitHub:</span> <a href="https://github.com/AnushaMahesh18" target="_blank" rel="noreferrer">AnushaMahesh18</a></li>
-            <li><span>LinkedIn:</span> <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a></li>
+            <li><span>LinkedIn:</span> <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">Add your link</a></li>
           </ul>
         </div>
 
         <div class="card">
           <h3>Message</h3>
-          <form class="form" action="mailto:your_email@rit.edu" method="post" enctype="text/plain">
+          <form class="form" action="mailto:am4556@g.rit.edu" method="post" enctype="text/plain">
             <input name="name" placeholder="Your Name" required>
             <input name="email" placeholder="Your Email" required>
             <input name="subject" placeholder="Subject" required>
             <textarea name="message" placeholder="Message" rows="5" required></textarea>
             <button class="btn primary" type="submit">Send Message</button>
-            <p class="muted small">Tip: Replace mailto with Formspree later for reliable web form delivery.</p>
+            <p class="muted small">Tip: Replace mailto with Formspree later for reliable delivery.</p>
           </form>
         </div>
       </div>
