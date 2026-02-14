@@ -459,3 +459,24 @@ input:focus, textarea:focus{
   .stats{ grid-template-columns: 1fr; }
   .hero h1{ font-size:36px; }
 }
+/* FORCE sidebar profile image sizing (fix for huge image) */
+.sidebar .profile-wrapper{
+  width:110px !important;
+  height:110px !important;
+  border-radius:50% !important;
+  padding:8px !important;
+  background:#1e293b !important;
+  box-shadow: 0 0 0 6px rgba(255,255,255,.05) !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  overflow:hidden !important;
+}
+
+.sidebar .profile-img{
+  width:100% !important;
+  height:100% !important;
+  border-radius:50% !important;
+  object-fit:cover !important;
+  display:block !important;
+}
