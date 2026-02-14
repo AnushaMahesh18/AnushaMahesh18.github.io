@@ -1,7 +1,6 @@
-// year
 document.getElementById("year").textContent = new Date().getFullYear();
 
-// typing effect (no libraries)
+// typing effect (no library)
 function typeRotate(el, words, period = 1400) {
   let txt = "";
   let wordIndex = 0;
@@ -49,13 +48,13 @@ filterBtns.forEach(btn => {
   });
 });
 
-// active nav on scroll (desktop)
+// active nav on scroll
 const navLinks = document.querySelectorAll(".nav a");
 const sections = Array.from(document.querySelectorAll(".section"));
 
 function setActive() {
   let idx = 0;
-  const y = window.scrollY + 120;
+  const y = window.scrollY + 140;
   for (let i = 0; i < sections.length; i++) {
     if (sections[i].offsetTop <= y) idx = i;
   }
