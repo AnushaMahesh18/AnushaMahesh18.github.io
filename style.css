@@ -548,3 +548,24 @@ input:focus, textarea:focus{
     left:0 !important;
   }
 }
+/* === FORCE Resume timeline to be WHITE + readable === */
+#resume .timeline-content{
+  background: #ffffff !important;
+  color: #0b1220 !important;
+  border: 1px solid #e6e8ee !important;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, .10) !important;
+}
+
+#resume .timeline-content h3,
+#resume .timeline-content p,
+#resume .timeline-content li{
+  color: #0b1220 !important;
+}
+
+#resume .timeline-content .muted{
+  color: #5b6472 !important;
+}
+
+#resume .timeline-date{
+  color: #2563eb !important;
+}
