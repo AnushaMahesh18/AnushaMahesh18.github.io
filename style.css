@@ -569,3 +569,84 @@ input:focus, textarea:focus{
 #resume .timeline-date{
   color: #2563eb !important;
 }
+
+
+
+
+/* ===== Skills (Friend-style layout) ===== */
+.skills-dark{
+  padding-top: 70px;
+  padding-bottom: 80px;
+}
+
+.skills-title{
+  text-align:center;
+  margin-bottom: 30px;
+}
+
+.skills-title h2{
+  font-size: 52px;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+/* Wide dark card */
+.skills-panel{
+  max-width: 1120px;
+  margin: 0 auto;
+  background: #0b1220;
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 22px;
+  padding: 38px 36px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.30);
+}
+
+/* Columns */
+.skills-cols{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 26px;
+}
+
+.skills-col h3{
+  color: #60a5fa;
+  font-size: 18px;
+  font-weight: 800;
+  margin: 0 0 14px;
+  line-height: 1.2;
+}
+
+.chips-row{
+  display:flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Pills */
+.chip{
+  display:inline-flex;
+  align-items:center;
+  background: rgba(255,255,255,0.09);
+  border: 1px solid rgba(255,255,255,0.08);
+  color: #e5e7eb;
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+/* Responsive */
+@media (max-width: 1100px){
+  .skills-cols{ grid-template-columns: repeat(3, 1fr); }
+  .skills-title h2{ font-size: 44px; }
+}
+@media (max-width: 720px){
+  .skills-cols{ grid-template-columns: repeat(2, 1fr); }
+  .skills-panel{ padding: 26px 18px; }
+  .skills-title h2{ font-size: 36px; }
+}
+@media (max-width: 420px){
+  .skills-cols{ grid-template-columns: 1fr; }
+}
