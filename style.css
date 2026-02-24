@@ -814,3 +814,119 @@ input:focus, textarea:focus{
   border-color: rgb(52, 63, 89) !important;
   box-shadow: 0 0 0 3px rgba(52, 63, 89, 0.1) !important;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===============================
+   BRAND COLOR OVERRIDES (rgb(52,63,89))
+   Applies ONLY to items you listed
+   =============================== */
+
+/* 1) HERO BUTTONS: View Projects / Contact / Download Resume + Form submit */
+.hero-cta .btn,
+.form .btn.primary{
+  background: rgb(52, 63, 89) !important;
+  color: #fff !important;
+  border: 1px solid rgb(52, 63, 89) !important;
+}
+
+.hero-cta .btn:hover,
+.form .btn.primary:hover{
+  background: #2d374f !important;
+  border-color: #2d374f !important;
+}
+
+/* 2) PORTFOLIO LINKS -> make them real buttons */
+.work-links a{
+  display:inline-flex !important;
+  align-items:center !important;
+  padding:10px 14px !important;
+  border-radius:14px !important;
+  background: rgb(52, 63, 89) !important;
+  color:#fff !important;
+  border:1px solid rgb(52, 63, 89) !important;
+  text-decoration:none !important;
+  font-weight:900 !important;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, .08) !important;
+  transition: transform .12s ease, background .2s ease !important;
+}
+
+.work-links a:hover{
+  background:#2d374f !important;
+  border-color:#2d374f !important;
+  transform: translateY(-1px) !important;
+  text-decoration:none !important;
+}
+
+/* 3) "What I'm building toward" -> 2nd wide card inside About */
+#about .card.wide:nth-of-type(2){
+  background: rgba(52, 63, 89, 0.06) !important;
+  border: 1px solid rgba(52, 63, 89, 0.30) !important;
+}
+
+/* 4) RESUME cards -> add left border accent */
+#resume .timeline-content{
+  border-left: 4px solid rgb(52, 63, 89) !important;
+}
+
+/* 5) PORTFOLIO cards */
+#projects .work{
+  border: 1px solid rgba(52, 63, 89, 0.30) !important;
+}
+
+#projects .work:hover{
+  box-shadow: 0 16px 40px rgba(52, 63, 89, 0.16) !important;
+}
+
+/* 6) TECHNICAL SKILLS panel */
+#skills .skills-panel{
+  border: 1px solid rgba(52, 63, 89, 0.30) !important;
+}
+
+/* 7) CERTIFICATE cards + View button */
+#certificates .cert-card{
+  background:#0b1220 !important; /* keep your format */
+  border: 1px solid rgba(52, 63, 89, 0.45) !important;
+}
+
+#certificates .cert-view{
+  background: rgb(52, 63, 89) !important;
+  border: 1px solid rgb(52, 63, 89) !important;
+  color:#fff !important;
+}
+
+#certificates .cert-view:hover{
+  background:#2d374f !important;
+  border-color:#2d374f !important;
+}
+
+/* 8) CONTACT cards (Reach me + Message) */
+#contact .grid2 > .card{
+  border: 1px solid rgba(52, 63, 89, 0.30) !important;
+}
+
+/* Contact form focus */
+#contact input:focus,
+#contact textarea:focus{
+  border-color: rgba(52, 63, 89, 0.60) !important;
+  box-shadow: 0 0 0 4px rgba(52, 63, 89, 0.12) !important;
+}
+
+/* 9) OPTIONAL: make section accent headings use brand color (only inside those areas) */
+#skills .skills-col h3,
+#resume .timeline-date{
+  color: rgb(52, 63, 89) !important;
+}
+
