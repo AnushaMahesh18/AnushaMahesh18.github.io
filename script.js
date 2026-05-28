@@ -12,11 +12,18 @@ function typeRotate(el, words, period = 1400) {
     el.textContent = txt;
 
     let delta = isDeleting ? 40 : 65;
-    if (!isDeleting && txt === full) { delta = period; isDeleting = true; }
-    else if (isDeleting && txt === "") { isDeleting = false; wordIndex++; delta = 250; }
+    if (!isDeleting && txt === full) {
+      delta = period;
+      isDeleting = true;
+    } else if (isDeleting && txt === "") {
+      isDeleting = false;
+      wordIndex++;
+      delta = 250;
+    }
 
     setTimeout(tick, delta);
   }
+
   tick();
 }
 
@@ -51,11 +58,14 @@ const sections = Array.from(document.querySelectorAll(".section"));
 function setActive() {
   let idx = 0;
   const y = window.scrollY + 160;
+
   for (let i = 0; i < sections.length; i++) {
     if (sections[i].offsetTop <= y) idx = i;
   }
+
   const id = sections[idx]?.id;
   navLinks.forEach(a => a.classList.toggle("active", a.getAttribute("href") === `#${id}`));
 }
+
 window.addEventListener("scroll", setActive);
 setActive();
